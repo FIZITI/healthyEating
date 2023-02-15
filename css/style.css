@@ -39,20 +39,26 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	height: 3000px;
 }
 .menu{
+	--main-menu-color: #f2cf74;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	position: sticky;
 	top: 0em;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	max-height: 100%;
+	max-height: 1440px;
+	height: 753px;
 	width: 300px;
-	background-color: #f2cf74;
+	background-color: var(--main-menu-color);
 }
-
 .idle-menu{
-	margin: 25px;
+	font-size: 18px;
+	margin: 5px 20px;
+	padding: 15px 1px;
+	border: 2px solid black;
+	background: var(--main-menu-color);
 }
-
 img{
 	width:  100px;
 }
