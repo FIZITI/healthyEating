@@ -28,37 +28,44 @@ input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
+a, a:visited{text-decoration: none; color: inherit}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
-.header{
-	height: 3000px;
-}
-.menu{
+:root {
 	--main-menu-color: #f2cf74;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	position: sticky;
-	top: 0em;
+}
+
+.header{
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	max-height: 1440px;
-	height: 753px;
-	width: 300px;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	max-width: 100%;
+	height: 65px;
+	max-height: 100px;
 	background-color: var(--main-menu-color);
 }
+.menu-nav{
+	margin-left: 300px;
+}
+.header ul{
+	display: flex;
+	flex-direction: row;
+}
+.logo{
+	margin-left: 35px;
+}
+.idle-menu:hover{
+	color: #9d5c5c;
+}
 .idle-menu{
+	margin-right: 20px;
 	font-size: 18px;
-	margin: 5px 20px;
-	padding: 15px 1px;
-	border: 2px solid black;
-	background: var(--main-menu-color);
 }
 img{
-	width:  100px;
+	width:  45px;
 }
