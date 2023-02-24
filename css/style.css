@@ -37,9 +37,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 :root {
 	--main-menu-color: #f2cf74;
+	--main-content-color: #e9e6cd;
+}
+.wrapper{
+	background-color: var(--main-content-color);
 }
 p{
 	font-size: 18px;
+	line-height: 25px;
+}
+.mb{
+	margin-bottom: 15px;
+}
+.mt{
+	margin-top: 10px;
 }
 .header{
 	display: flex;
@@ -47,8 +58,9 @@ p{
 	position: sticky;
 	top: 0;
 	width: 100%;
-	height: 65px;
+	height: 50px;
 	max-height: 100px;
+	box-shadow: 0 0 5px 0 black;
 	background-color: var(--main-menu-color);
 }
 .menu-nav{
@@ -66,7 +78,7 @@ p{
 }
 .idle-menu{
 	margin-right: 20px;
-	font-size: 18px;
+	font-size: 17px;
 }
 .logo img{
 	width: 45px;
@@ -76,14 +88,8 @@ img{
 }
 .content{
 	height: 1000px;
-	width: 100%;
+	width: 85%;
+	padding: 40px 0;
 	margin: 0 auto;
 	background: #e9e6cd;
-}
-.lorem{
-	line-height: 25px;
-	margin-top: 10px;
-}
-.lorem-div{
-	padding: 50px 100px;
 }
