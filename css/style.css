@@ -64,6 +64,7 @@ li{
 	margin-top: 15px;
 }
 .header{
+	z-index: 1;
 	display: flex;
 	align-items: center;
 	position: sticky;
@@ -88,13 +89,16 @@ li{
 	margin-left: 75px;
 
 }
-.idle-menu:hover{
-	color: #c37272;
-	font-size: 17px;
-}
 .idle-menu{
+	transition-property: all;
+	transition: 0.4s;
 	margin-right: 20px;
 	font-size: 16px;
+}
+.idle-menu:hover{
+	color: var(--main-green-color);
+	transform: scale(1.1);
+	transition: 0.4s;
 }
 .logo img{
 	width: 45px;
@@ -141,29 +145,38 @@ li{
 .ul-refer li{
 	margin-bottom: 10px;
 }
+.card__objects{
+	display: flex;
+	flex-direction: row;
+}
 .card{
+	transition-property: all;
+	transition: 1s;
 	margin: 30px auto;
-	height: 250px;
-	width: 275px;
+	height: 210px;
+	width: 235px;
 	box-shadow: 3px 3px 3px 1px gray;
 	border-radius: 10px;
 	background-color: #e0d4a6;
 }
+.card:hover{
+	box-shadow: 3px 3px 3px 2px var(--main-green-color);
+	transform: translateY(-10%);
+	transition: 0.3s;
+}
 .card__header{
-	height: 25%;
+	height: 35%;
+	width: 100%;
 	text-align: center;
 	padding: 10px 0 0 0;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	background: #d29696;
+	background: #fef2be;
 }
 .card__footer{
-	height: 75%;
+	height: 65%;
+	width: 100%;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	background: #c33a3a;
-}
-.card:hover{
-
-	/*box-shadow: 5px 5px 3px 5px gray;*/
+	background: #c45b5b;
 }
