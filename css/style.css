@@ -40,7 +40,7 @@ html{
 }
 :root {
 	--main-blond-color: #e3e7ac;
-	--main-green-color: #00a400;
+	--main-green-color: #049d04;
 	--main-red-color: #dc143cff;
 	--main-content-color: #ede8c9;
 }
@@ -49,6 +49,18 @@ ul li {
 }
 body{
 	background-color: var(--main-content-color);
+}
+h3, h2{
+	font-size: 22px;
+	font-weight: 450;
+}
+h3{
+	color: var(--main-green-color);
+	padding: 0 80px;
+}
+.ot{
+	/*margin-left: 200px;*/
+
 }
 p{
 	font-size: 17px;
@@ -105,7 +117,7 @@ li{
 }
 .content{
 	height: 100%;
-	width: 85%;
+	width: 80%;
 	padding: 0 0;
 	margin: 0 auto;
 	background: var(--main-content-color);
@@ -152,15 +164,14 @@ li{
 .card{
 	transition-property: all;
 	transition: 1s;
-	margin: 30px auto;
-	height: 210px;
+	height: 180px;
 	width: 235px;
 	box-shadow: 3px 3px 3px 1px gray;
 	border-radius: 10px;
 	background-color: #e0d4a6;
 }
 .card:hover{
-	box-shadow: 3px 3px 3px 2px var(--main-green-color);
+	box-shadow: 2px 2px 3px 2px var(--main-green-color);
 	transform: translateY(-10%);
 	transition: 0.3s;
 }
@@ -179,4 +190,14 @@ li{
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	background: #c45b5b;
+}
+.guidance__content{
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.card-p{
+	display: block;
+	margin: 200px 300px;
 }
